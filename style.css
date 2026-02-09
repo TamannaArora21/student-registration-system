@@ -49,8 +49,7 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
-
-.form-section:hover,
+//table section shows student details
 .table-section:hover {
     transform: translateY(-4px);
 }
@@ -163,3 +162,4 @@ th {
         font-size: 14px;
     }
 }
+
