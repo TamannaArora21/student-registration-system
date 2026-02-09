@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             tableBody.appendChild(row);
         });
-
+// add scroll bar 
         // ✅ Dynamic vertical scrollbar using JavaScript
         tableWrapper.style.maxHeight = "250px";
         tableWrapper.style.overflowY = students.length > 3 ? "auto" : "hidden";
@@ -128,3 +128,4 @@ document.addEventListener("DOMContentLoaded", () => {
         renderTable();
     }
 });
+
