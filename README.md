@@ -8,7 +8,8 @@ The system uses **Local Storage**, so data is not lost after refreshing the page
 
 ---
 
-##  Features
+##  Features 
+## helps to use add remove student details
 - Add new student records
 - Edit existing student details
 - Delete student records
@@ -40,4 +41,5 @@ The system uses **Local Storage**, so data is not lost after refreshing the page
 ---
 
 ## Author 
+
 Tamanna.
