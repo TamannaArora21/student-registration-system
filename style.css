@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url(bg_imaage.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #2c3e50;
+}
+
+.header p {
+    color: #555;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+/* Form Section */
+.form-section{
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.form-section:hover,
+.table-section:hover {
+    transform: translateY(-4px);
+}
+
+
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+
+/* Table Section */
+.table-section {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.form-section:hover,
+.table-section:hover {
+    transform: translateY(-4px);
+}
+
+
+.table-wrapper {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #ecf0f1;
+    
+}
+
+/* Action Buttons */
+.edit {
+    background-color: #27ae60;
+    border-radius: 4px;
+}
+
+.edit:hover {
+    background-color: #1e8449;
+}
+
+.delete {
+    background-color: #e74c3c;
+    border-radius: 4px;
+}
+
+.delete:hover {
+    background-color: #c0392b;
+}
+
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    table {
+        font-size: 14px;
+    }
+}
